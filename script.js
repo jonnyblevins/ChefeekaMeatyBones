@@ -22,7 +22,6 @@ const frontImages = [
     'https://i.imgur.com/8kXNEZ7.jpg',
   ];
   
-  // Generate the photo grid dynamically
   const flipCardContainer = document.getElementById('flipCardContainer');
   
   for (let i = 0; i < 9; i++) {
@@ -53,7 +52,7 @@ const frontImages = [
     const video = document.getElementById('videoContainer');
     const scrollPosition = window.scrollY;
   
-    if (scrollPosition > 100) { // Change 100 to the scroll position where you want the video to disappear
+    if (scrollPosition > 100) { 
       video.style.display = 'none';
     } else {
       video.style.display = 'block';

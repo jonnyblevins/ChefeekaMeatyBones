@@ -61,9 +61,6 @@ body {
   object-fit: cover;
 }
 
-/* Add your existing CSS for flipping cards here */
-
-/* Video container styles */
 .video-container {
   position: fixed;
   top: 0;
