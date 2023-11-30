@@ -35,6 +35,8 @@ const frontImages = [
     frontImg.alt = `Front Image ${i + 1}`;
     flipCardFront.appendChild(frontImg);
   
+    console.log('Front Image Element:', frontImg); // Debug log
+  
     const flipCardBack = document.createElement('div');
     flipCardBack.classList.add('flip-card-back');
     const backImg = document.createElement('img');
@@ -42,12 +44,14 @@ const frontImages = [
     backImg.alt = `Back Image ${i + 1}`;
     flipCardBack.appendChild(backImg);
   
+    console.log('Back Image Element:', backImg); // Debug log
+  
     flipCard.appendChild(flipCardFront);
     flipCard.appendChild(flipCardBack);
   
     flipCardContainer.appendChild(flipCard);
   }
-
+  
   window.addEventListener('scroll', function() {
     const video = document.getElementById('videoContainer');
     const scrollPosition = window.scrollY;
